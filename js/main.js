@@ -1,9 +1,8 @@
 var config = {
   type: Phaser.AUTO,
-  width: 1950,
-  height: 950,
-  //   width: 800,
-  //   height: 600,
+
+  width: 800,
+  height: 600,
   physics: {
     default: "arcade",
     arcade: {
@@ -29,7 +28,7 @@ function create() {
   this.add.image(400, 300, "sky");
   var particles = this.add.particles("red");
   var emitter = particles.createEmitter({
-    lifespan: 900000,
+    lifespan: 300,
 
     speed: 1,
     scale: { start: 0.2, end: 0.1 }
